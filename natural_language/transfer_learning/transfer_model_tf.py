@@ -2,11 +2,12 @@
 import tensorflow as tf
 import torch
 from datasets import load_dataset
+
 import os
-from transformers import TFAutoModelForSequenceClassification, TFDistilBertForMaskedLM, TFBertForMaskedLM
-from transformers import create_optimizer
-from transformers import DataCollatorWithPadding
-from transformers import AutoTokenizer
+from transformers.src.transformers import TFAutoModelForSequenceClassification, TFDistilBertForMaskedLM, TFBertForMaskedLM
+from transformers.src.transformers import create_optimizer
+from transformers.src.transformers import DataCollatorWithPadding
+from transformers.src.transformers import AutoTokenizer
 import os
 
 model_name = "distilbert-base-uncased"
